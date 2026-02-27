@@ -1,0 +1,5 @@
+SELECT department, ROUND(AVG(performance_score), 2) AS avg_performance
+FROM employees
+GROUP BY department
+ORDER BY avg_performance DESC
+LIMIT 1;
