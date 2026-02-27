@@ -1,0 +1,11 @@
+SELECT e.emp_name, e.department, e.salary
+FROM employees e
+WHERE e.salary > (
+    SELECT AVG(salary)
+    FROM employees
+    WHERE department = e.department
+);
+SELECT emp_name, department, job_title, joining_date
+FROM employees
+ORDER BY joining_date ASC
+LIMIT 5;
