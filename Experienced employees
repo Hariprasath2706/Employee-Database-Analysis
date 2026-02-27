@@ -1,0 +1,4 @@
+SELECT emp_name, department, job_title, joining_date
+FROM employees
+ORDER BY joining_date ASC
+LIMIT 5;
