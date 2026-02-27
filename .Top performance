@@ -1,0 +1,4 @@
+SELECT emp_name, department, performance_score
+FROM employees
+ORDER BY performance_score DESC
+LIMIT 5;
