@@ -1,0 +1,3 @@
+SELECT department, emp_name, MAX(performance_score) AS top_score
+FROM employees
+GROUP BY department;
